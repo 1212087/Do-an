@@ -1,0 +1,16 @@
+{
+  "name": "Do_an",
+  "description": "Do an mon hoc + seminar UDPT",
+  "main": "",
+  "authors": [
+    "1212087"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "angularjs#^1.5.5",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.2",
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}
