@@ -17,16 +17,80 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
-		<h1 class="text-center">Hello World</h1>
+	<body ng-controller='HomeCtrl'>
+		<div class="container-fluid wrapper">
+			<div class="row">
+				<nav class="navbar navbar-default menu-bar" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<div class="navbar-brand logo">
+								<a href="index.html" title=""><img src="img/logo/1.jpg" alt="" ></a>
+							</div> 
+							<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar bg-white"></span>
+								<span class="icon-bar bg-white"></span>
+								<span class="icon-bar bg-white"></span>
+							</button>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse menu">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><b>ĐĂNG KÝ</b></a></li>
+								<li><a href="#"><b>TRỢ GIÚP</b></a></li>
+								<li><a href="#"><b>VỀ CHÚNG TÔI</b></a></li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Bạn cần mua gì?">
+								</div>
+								<button type="submit" class="btn btn-info">TÌM KIẾM</button>
+							</form>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</nav>
+			</div>
+			<div id="content">
+				<div class="row slogan center">
+					<div class="col">
+						<h1>Hãy chọn vị trí để tìm món hàng gần bạn nhất!</h1>
+					</div>
+				</div>
 
+				<div class="row">
+					<div class="col-sm-12 center">
+						<form action="" method="POST" class="form-horizontal" role="form">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<select name="" id="input" class="form-control">
+											<option value="">-- TP. Hồ Chí Minh --</option>
+										</select>
+										<br>
+										<button type="submit" class="btn btn-info">Vào mua ngay</button>
+									</div>
+								</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<div class="row">
+					iMarket - Copyright &copy; 2016 - HCMUS
+				</div>
+			</div>
+		</div>
 		<!-- jQuery -->
 		<script src="libs/jquery/dist/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 		<!-- Angular JS -->
  		<script src="libs/angular/angular.js"></script>
+ 		<script src="libs/angular-route/angular-route.js"></script>
  		<script src="app.js"></script>
+ 		<script src="controllers/account/account.js"></script>
 
 	</body>
 </html>
