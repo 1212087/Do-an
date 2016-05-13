@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title Page</title>
+		<title>iMarket - chợ điện tử</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.css">
@@ -18,14 +18,16 @@
 		<![endif]-->
 	</head>
 	<body ng-controller='HomeCtrl'>
+		<!-- Page -->
 		<div class="container-fluid" id="wrapper">
+			<!-- Navbar -->
 			<div class="row">
-				<nav class="navbar navbar-default menu-bar" role="navigation">
+				<nav class="navbar navbar-default menu-bar center" role="navigation">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<div class="navbar-brand logo">
-								<a href="index.html" title=""><img src="../img/logo/1.jpg" alt="" ></a>
+								<a href="index.html" title=""><img src="img/logo/1.jpg" alt="" ></a>
 							</div> 
 							<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 								<span class="sr-only">Toggle navigation</span>
@@ -52,33 +54,38 @@
 					</div>
 				</nav>
 			</div>
-			<div id="content">
-				<div class="row slogan center">
-					<div class="col">
-						<h1>Hãy chọn vị trí để tìm món hàng gần bạn nhất!</h1>
+			<!-- Content, add row class first for 100% width -->
+			<div class="row">
+				<div id="content">
+					<div class="row slogan center">
+						<div class="col">
+							<h1>Hãy chọn vị trí để tìm món hàng gần bạn nhất!</h1>
+						</div>
 					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-sm-12 center">
-						<form action="" method="POST" class="form-horizontal" role="form">
-								<div class="form-group">
-									<div class="col-sm-12">
-										<select name="" id="input" class="form-control">
-											<option value="">-- TP. Hồ Chí Minh --</option>
-										</select>
-										<br>
-										<button type="submit" class="btn btn-info">Vào mua ngay</button>
+					<div class="row">
+						<div class="col-sm-12 center">
+							<form action="" method="POST" class="form-horizontal" role="form">
+									<div class="form-group">
+										<div class="col-sm-12">
+											<select name="" id="input" class="form-control">
+												<option value="">-- TP. Hồ Chí Minh --</option>
+											</select>
+											<br>
+											<button type="submit" class="btn btn-info">Vào mua ngay</button>
+										</div>
 									</div>
-								</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<div id="footer">
-				<div class="row">
-					iMarket - Copyright &copy; 2016 - HCMUS
+			<!-- Footer -->
+			<div class="row">
+				<div id="footer">
+					<div class="center">
+						iMarket - Copyright &copy; 2016 - HCMUS
+					</div>
 				</div>
 			</div>
 		</div>
