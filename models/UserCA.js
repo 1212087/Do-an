@@ -1,7 +1,24 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+var redisClient = require('./Redis');
 
+var UserCA = function () {
+};
 
+UserCA.upsert = function (user) {
+    if (!user || !user.username) {
+        return false;
+    }
+    redisClient.set(user.username, JSON.stringify(user));
+};
+
+UserCA.getByUsername = function (username, callback) {
+    if (!username) {
+        return false;
+    }
+
+    redisClient.get(username, function (err, reply) {
+        var result = JSON.parse(reply);
+        callback(result);
+    });
+};
+
+module.exports = UserCA;
