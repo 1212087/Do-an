@@ -10,7 +10,7 @@ html, body {
 	margin: 0 auto;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 599px)
+@media only screen and (min-width: 319px) 
 {
 	body {
 		font-size: 13px;
@@ -31,10 +31,12 @@ html, body {
 	}
 
 	.logo img {
-		height: 50px;
+		height: 50px !important;
 		max-width: 100px;
 		max-height: 50px;
 	}
+
+	
 
 	.menu-bar {
 		background: #5bc0de;
@@ -139,7 +141,422 @@ html, body {
 		flex-direction: column;
 		padding: 0px 0px 0px 5px;
 	}
+
+	.info .row {
+		flex-grow: 1;
+		height: 33%;
+		margin: 0px 5px 2px 5px;	
+	}
+
+	h4 {
+		font-size: 16px !important;
+		font-weight: bold;
+	}	
 	
+	.post-info {
+		margin-bottom: 5px;
+	}
+
+	.post-info .row {
+		border-bottom: 1px solid #bce8f1;
+		margin-top: 5px;
+	}
+
+	.product-info {
+		text-align: justify;
+	}
+
+	.contact {
+		margin: 0px;
+	}
+	.slogan {
+		color: black;
+		margin-bottom: 25px;
+		margin-top: 25px;
+	}
+	
+	/*CSS định dạng kiểu ALIGN*/
+	.center {
+		text-align: center;
+	}
+	
+	/*CSS định dạng màu nền TRẮNG*/
+	.bg-white {
+		background-color: white !important;
+	}
+	
+	/*CSS định dạng khung Giá*/
+	.price {
+		color: red;
+	}
+	#footer {
+		background-color: black;
+		bottom: 0;
+		color: white;
+		height: 50px;
+		left: 0;
+		position: absolute;
+		padding-top: 15px;
+		width: 100%;	
+	}
+
+}
+@media only screen and (min-width: 600px)
+{
+	body {
+		font-size: 25px !important;
+	}
+
+	.logo
+	{
+		max-width: 100px;
+		padding: 0px;
+		width: 100px;
+	}
+
+	.logo a {
+		
+		height: 50px;
+		width: 100px;
+/*		position: absolute;*/
+	}
+
+	.logo img {
+		height: 50px !important;
+		max-width: 100px;
+		max-height: 50px ;
+	}
+
+	.menu-bar {
+		background: #5bc0de;
+		margin: 0 auto;
+		width:100% !important;
+	}
+	
+	.panel-title {
+		font-size:25px !important; 
+	}
+	.menu-button:hover {
+		background-color: white !important;
+	}
+	
+	.menu-button:hover span {
+		background-color: #5bc0de !important;
+	}
+
+	.menu-button {
+		background: #5bc0de;
+		border-radius: 0px;
+		border: 0px;
+		margin: 0;
+		padding: 18px 16px;
+	}
+	
+	.menu ul {
+		margin-top: 0px;
+	}
+	
+	.menu {
+		
+		background-color: #F1F1F1 !important;
+		color: black !important;
+		opacity: 1;
+	}
+	
+	#wrapper {
+		min-height: 100%;
+		padding-bottom: 50px;
+		position: relative;
+	}
+
+	#content {
+		margin: 0px 5px 0px 5px;
+	}
+
+	.search {
+		margin: 5px 0px 5px 0px !important;
+	 	padding: 1px 5px 0px 5px;
+	 }
+
+	.search button {
+	 	float: right;
+	 	margin-left: 2px;
+	 	width: 25%;
+	 }
+
+	.search-ip {
+		float: left;
+		margin-bottom: 2px;
+		width: 74%;
+	}
+	
+	.category {
+		float: left;
+		width: 50%;
+	}
+	
+	.location {
+		float: right;
+		width: 49%;
+	}
+	
+	.form-control {
+	    display: inline-block;
+	    width: 100% !important;
+	    vertical-align: middle;
+  	}
+
+	#main-content {
+	}
+
+	.post {
+		background-color: white;
+		border: 0px;
+		border-radius: 5px;
+		clear: both;
+		display: flex;
+		line-height: 10px;
+		margin: -5px 0px 10px 0px;
+		position: relative;
+	}
+	
+	.image {
+		align-items: stretch;
+		border-right: 1px solid #5bc0de;
+		padding: 0px !important;
+		flex: 0.5;
+		max-height: 100%;
+	}
+
+	.image img {
+		height: auto;
+		width: 90%;
+		margin: auto;
+	}
+
+	.info {
+		align-items: stretch;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		padding: 0px 0px 0px 5px;
+	}
+	
+
+	.info .row {
+		flex-grow: 1;
+		height: 33%;
+		margin: 0px 5px 2px 5px;	
+	}
+
+	h4 {
+		font-size: 16px !important;
+		font-weight: bold;
+	}	
+	
+	.post-info {
+		margin-bottom: 5px;
+	}
+
+	.post-info .row {
+		border-bottom: 1px solid #bce8f1;
+		margin-top: 5px;
+	}
+
+	.product-info {
+		text-align: justify;
+	}
+
+	.contact {
+		margin: 0px;
+	}
+	.slogan {
+		color: black;
+		margin-bottom: 25px;
+		margin-top: 25px;
+	}
+	
+	/*CSS định dạng kiểu ALIGN*/
+	.center {
+		text-align: center;
+	}
+	
+	/*CSS định dạng màu nền TRẮNG*/
+	.bg-white {
+		background-color: white !important;
+	}
+	
+	/*CSS định dạng khung Giá*/
+	.price {
+		color: red;
+	}
+	#footer {
+		background-color: black;
+		bottom: 0;
+		color: white;
+		height: 50px;
+		left: 0;
+		position: absolute;
+		padding-top: 15px;
+		width: 100%;	
+	}
+
+}
+
+@media only screen and (min-width: 799px)
+{
+	body {
+		font-size: 25px !important;
+		max-width: 90%;
+	}
+
+	.logo
+	{
+		max-width: 100px;
+		padding: 0px;
+		width: 100px;
+	}
+
+	.logo a {
+		
+		height: 50px;
+		width: 100px;
+/*		position: absolute;*/
+	}
+
+	.logo img {
+		height: 50px !important;
+		max-width: 100px;
+		max-height: 50px ;
+	}
+
+	.menu-bar {
+		background: #5bc0de;
+		margin: 0 auto;
+		width:100% !important;
+	}
+	
+	.panel-title {
+		font-size:25px !important; 
+	}
+	.menu-button:hover {
+		background-color: white !important;
+	}
+	
+	.menu-button:hover span {
+		background-color: #5bc0de !important;
+	}
+
+	.menu-button {
+		background: #5bc0de;
+		border-radius: 0px;
+		border: 0px;
+		margin: 0;
+		padding: 18px 16px;
+	}
+	
+	.menu ul {
+		margin-top: 0px;
+	}
+	
+	.menu {
+		
+		background-color: #F1F1F1 !important;
+		color: black !important;
+		opacity: 1;
+	}
+	
+	#wrapper {
+		min-height: 100%;
+		padding-bottom: 50px;
+		position: relative;
+	}
+
+	#content {
+		margin: 0px 5px 0px 5px;
+	}
+
+	.search {
+		margin: 5px 0px 5px 0px !important;
+	 	padding: 1px 5px 0px 5px;
+	 }
+
+	.search button {
+	 	float: right;
+	 	margin-left: 2px;
+	 	width: 25%;
+	 }
+
+	.search-ip {
+		float: left;
+		margin-bottom: 2px;
+		width: 74%;
+	}
+	
+	.category {
+		float: left;
+		width: 50%;
+	}
+	
+	.location {
+		float: right;
+		width: 49%;
+	}
+	
+	.form-control {
+	    display: inline-block;
+	    width: 100% !important;
+	    vertical-align: middle;
+  	}
+
+	#main-content {
+	}
+
+	.post {
+		background-color: white;
+		border: 0px;
+		border-radius: 5px;
+		clear: both;
+		display: flex;
+		line-height: 10px;
+		margin: -5px 0px 10px 0px;
+		position: relative;
+	}
+	
+	.image {
+		align-items: stretch;
+		border-right: 1px solid #5bc0de;
+		padding: 0px !important;
+		flex: 0.5;
+		max-height: 100%;
+		float: left !important; 
+		width: 60%;
+		margin:0.1%;
+
+	}
+
+	.image img {
+		height: auto;
+		width:100% !important;
+		margin:0% !important;
+	}
+
+	.info {
+		align-items: stretch;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		padding: 0px 0px 0px 5px;
+	}
+	
+	.row_plus {
+		flex-grow: 1;
+		height: 33%;
+		width: 42% !important;
+		float :right !important;
+		margin-left: -10% !important;	
+	}
+
 	.info .row {
 		flex-grow: 1;
 		height: 33%;
