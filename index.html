@@ -27,7 +27,7 @@
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<div class="navbar-brand logo">
-								<a href="index.html" title=""><img src="img/logo/1.jpg" alt="" ></a>
+								<a href="#/" title=""><img src="img/logo/1.jpg" alt="" ></a>
 							</div> 
 							<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 								<span class="sr-only">Toggle navigation</span>
@@ -40,45 +40,17 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse navbar-ex1-collapse menu">
 							<ul class="nav navbar-nav">
-								<li><a href="#"><b>ĐĂNG KÝ</b></a></li>
+								<li><a href="#/login"><b>ĐĂNG NHẬP</b></a></li>
 								<li><a href="#"><b>TRỢ GIÚP</b></a></li>
-								<li><a href="#"><b>VỀ CHÚNG TÔI</b></a></li>
+								<li><a href="#/about"><b>VỀ CHÚNG TÔI</b></a></li>
 							</ul>
-							<!-- <form class="navbar-form navbar-left" role="search">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Bạn cần mua gì?">
-								</div>
-								<button type="submit" class="btn btn-info">TÌM KIẾM</button>
-							</form> -->
 						</div><!-- /.navbar-collapse -->
 					</div>
 				</nav>
 			</div>
 			<!-- Content, add row class first for 100% width -->
-			<div class="row">
-				<div id="content">
-					<div class="row slogan center">
-						<div class="col">
-							<h1>Hãy chọn vị trí để tìm món hàng gần bạn nhất!</h1>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-12 center">
-							<form action="" method="POST" class="form-horizontal" role="form">
-									<div class="form-group">
-										<div class="col-sm-12">
-											<select name="" id="input" class="form-control">
-												<option value="">-- TP. Hồ Chí Minh --</option>
-											</select>
-											<br>
-											<button type="submit" class="btn btn-info">Vào mua ngay</button>
-										</div>
-									</div>
-							</form>
-						</div>
-					</div>
-				</div>
+			<div ng-view>
+				
 			</div>
 			<!-- Footer -->
 			<div class="row">

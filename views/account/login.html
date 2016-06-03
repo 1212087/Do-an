@@ -1,79 +1,16 @@
-<!DOCTYPE html>
-<html lang="vi" ng-app="myApp">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>iMarket - Post</title>
-
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" type="text/css" href="../../libs/bootstrap/dist/css/bootstrap.css">
-		<!-- Style -->
-		<link rel="stylesheet" type="text/css" href="../../libs/css/style.css">
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body ng-controller='HomeCtrl'>
-		<div class="container-fluid center" id="wrapper">
-			<div class="row">
-				<nav class="navbar navbar-default menu-bar center" role="navigation">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<div class="navbar-brand logo">
-								<a href="index.html" title=""><img src="../../img/logo/1.jpg" alt="" ></a>
-							</div> 
-							<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar bg-white"></span>
-								<span class="icon-bar bg-white"></span>
-								<span class="icon-bar bg-white"></span>
-							</button>
-						</div>
-				
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse navbar-ex1-collapse menu">
-							<ul class="nav navbar-nav">
-								<li><a href="#"><b>ĐĂNG KÝ</b></a></li>
-								<li><a href="#"><b>TRỢ GIÚP</b></a></li>
-								<li><a href="#"><b>VỀ CHÚNG TÔI</b></a></li>
-							</ul>
-							<!-- <form class="navbar-form navbar-left" role="search">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Bạn cần mua gì?">
-								</div>
-								<button type="submit" class="btn btn-info">TÌM KIẾM</button>
-							</form> -->
-						</div><!-- /.navbar-collapse -->
-					</div>
-				</nav>
-			</div>
-
-			<div class="row ">
-				<div id="content">
-					
-				</div>
-			</div>
-			
-			<div id="footer">
-				<div class="row center">
-					iMarket - Copyright &copy; 2016 - HCMUS
-				</div>
-			</div>
+<form action="" method="POST" class="form-horizontal center" role="form">
+		<div class="form-group">
+			<legend>Đăng Nhập</legend>
 		</div>
-		<!-- jQuery -->
-		<script src="../../libs/jquery/dist/jquery.js"></script>
-		<!-- Bootstrap JavaScript -->
-		<script src="../../libs/bootstrap/dist/js/bootstrap.js"></script>
-		<!-- Angular JS -->
- 		<script src="../../libs/angular/angular.js"></script>
- 		<script src="../../libs/angular-route/angular-route.js"></script>
- 		<script src="../../app.js"></script>
- 		<script src="../../controllers/account/account.js"></script>
+		<input type="text" name="email" id="input" class="form-control" value="" required="required" pattern="" title="Email/Username" placeholder="Email/Tên Đăng Nhập"> <br>
+		<input type="text" name="password" id="input" class="form-control" value="" required="required" pattern="" title="Password" placeholder="Mật Khẩu"> <br>
+		<div class="form-group">
+			<div class="col-sm-10 col-sm-offset-2">
+				<button type="submit" class="btn btn-success">Đăng Nhập</button>
+				<button type="button" class="btn btn-primary">Trở Lại</button>
+			</div>
+			<br>
+			<a href="#/register" title="">Chưa có tài khoản?</a> or <a href="#/forget" title="">Bạn quên mật khẩu?</a>
 
-	</body>
-</html>
+		</div>
+</form>
