@@ -1,7 +1,10 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+var express = require('express');
 
+module.exports = function (app) {
 
+    // expose session to views
+    app.use(function (req, res, next) {
+        res.locals.session = req.session;
+        next();
+    });
+};

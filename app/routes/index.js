@@ -1,7 +1,11 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+var tag = require('./test/Tag');
 
+module.exports = function (app, passport) {
 
+    tag(app);
+
+    //Tất cả request phải đi qua trang index.html để xử lý.
+    app.get('*', function (req, res) {
+        res.sendfile('public/index.html');
+    });
+};

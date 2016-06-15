@@ -5,7 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "bower": "*",
-    "express": "~4.5.1"
+    "express": "~4.5.1",
+    "mongoose": "*",
+    "body-parser": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
