@@ -36,11 +36,11 @@ var schema = mongoose.Schema({
         type: 'Boolean',
         default: false
     },
-    creationDate: {
+    dateCreated: {
         type: 'Date',
         required: true
     },
-    lastEditDate: {
+    dateUpdated: {
         type: 'Date',
         default: Date.now
     },
@@ -52,7 +52,7 @@ var schema = mongoose.Schema({
         type: 'String',
         default: null
     },
-    isNew: {
+    isNeww: {
         type: 'String',
         default: null
     },
@@ -77,4 +77,4 @@ schema.pre('save', function (next) {
 });
 
 // tạo model cho Question và export vào app
-module.exports = mongoose.model('Question', schema);
+module.exports = mongoose.model('posts', schema);

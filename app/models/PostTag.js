@@ -3,7 +3,7 @@ var ObjectId = mongoose.Schema.Types.ObjectId;
 
 // tạo cấu trúc db
 var schema = mongoose.Schema({
-    PostId: {
+    postId: {
         type: ObjectId,
         ref: 'Post'
     },

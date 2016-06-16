@@ -7,7 +7,9 @@
     "bower": "*",
     "express": "~4.5.1",
     "mongoose": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "bcrypt-nodejs": "0.0.3",
+    "rand-token": "^0.2.1"
   },
   "devDependencies": {
     "grunt": "~0.4.5",

@@ -14,11 +14,11 @@ var schema = mongoose.Schema({
         type: 'Number',
         default: 0
     },
-    creationDate: {
+    dateCreated: {
         type: 'Date',
         default: Date.now
     },
-    lastEditDate: {
+    dateUpdated: {
         type: 'Date',
         default: Date.now
     }

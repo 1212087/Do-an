@@ -15,10 +15,6 @@ var schema = mongoose.Schema({
         type: ObjectId,
         ref: 'Question'
     },
-    answerId: {
-        type: ObjectId,
-        ref: 'Answer'
-    },
     type: {
         type: 'String',
         required: true
@@ -31,7 +27,7 @@ var schema = mongoose.Schema({
         type: 'Boolean',
         default: false
     },
-    creationDate: {
+    dateCreated: {
         type: 'Date',
         default: Date.now
     }
