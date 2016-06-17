@@ -1,65 +1,26 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var port = process.env.PORT || 3000;
 
-myApp.config(['$routeProvider',function($routeProvider) {
-	$routeProvider.
-	when('/', {
-		templateUrl: 'views/layout/welcome.html',
-		controller: 'HomeCtrl'
-	}).
-	when('/main', {
-		templateUrl: 'views/layout/main.html',
-		controller: 'MainCtrl'
-	}).
-	when('/login', {
-		templateUrl: 'views/account/login.html',
-		controller: 'LoginCtrl'
-	}).
-	when('/register', {
-		templateUrl: 'views/account/register.html',
-		controller: 'RegisterCtrl'
-	}).
-	when('/forget', {
-		templateUrl: 'views/account/forget.html',
-		controller: 'ForgetCtrl'
-	}).
-	when('/about', {
-		templateUrl: 'views/about/about.html',
-		controller: 'AboutCtrl'
-	}).
-	when('/post', {
-		templateUrl: 'views/post/post.html',
-		controller: 'PostCtrl'
-	}).
-	otherwise({ 
-		template : "404"
-	});
-}]);
+var bodyParser = require('body-parser');
 
-myApp.controller('HomeCtrl', ['$scope', function ($scope) {
-	
-}]);
+app.use(bodyParser.json());
+app.use(bodyParser.json({type:'application/vnd.api+json'}));
+app.use(bodyParser.urlencoded({extended: true}));
 
-myApp.controller('MainCtrl', ['$scope', function ($scope) {
-	
-}]);
+var mongoose = require('mongoose');
 
-myApp.controller('LoginCtrl', ['$scope', function ($scope) {
-	
-}]);
+//Kết nối cơ sở dữ liệu
+var db = require('./config/database');
+mongoose.connect(db.url);
 
-myApp.controller('RegisterCtrl', ['$scope', function ($scope) {
-	
-}]);
+app.use(express.static(__dirname + '/public'));
 
-myApp.controller('ForgetCtrl', ['$scope', function ($scope) {
-	
-}])
+var routes =require('./app/routes');
 
-myApp.controller('AboutCtrl', ['$scope', function ($scope) {
-	
-}])
+routes(app);
 
-myApp.controller('PostCtrl', ['$scope', function ($scope) {
-	
-}])
-
+server.listen(port);
+console.log('Server is running on '+ port);
+exports = module.exports=app;
