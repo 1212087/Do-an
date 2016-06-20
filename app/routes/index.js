@@ -1,7 +1,7 @@
 var tag = require('./Tag');
 var post = require('./Post');
 var user = require('./User');
-var report = require('Report');
+var report = require('./Report');
 
 module.exports = function (app, passport) {
 
