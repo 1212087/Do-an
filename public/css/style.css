@@ -8,9 +8,33 @@ html, body {
 	font-family: Arial, sans-serif, helvetica;
 	height: 100%;
 	margin: 0 auto;
+	box-sizing: border-box;
+}
+/*Phần định dạng css chung cho trang*/
+/*CSS định dạng kiểu ALIGN*/
+.center {
+	text-align: center;
+}
+	
+/*CSS định dạng màu nền TRẮNG*/
+.bg-white {
+	background-color: white !important;
+}
+/*Footer*/
+#footer {
+		background-color: black;
+		bottom: 0;
+		color: white;
+		height: 50px;
+		left: 0;
+		position: absolute;
+		padding-top: 15px;
+		width: 100%;	
 }
 
-@media only screen and (min-width: 320px) and (max-width: 599px)
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
 {
 	body {
 		font-size: 13px;
@@ -173,29 +197,136 @@ html, body {
 		margin-top: 25px;
 	}
 	
-	/*CSS định dạng kiểu ALIGN*/
-	.center {
-		text-align: center;
+	.image-category {
+		display: none;
 	}
-	
-	/*CSS định dạng màu nền TRẮNG*/
-	.bg-white {
-		background-color: white !important;
-	}
-	
 	/*CSS định dạng khung Giá*/
 	.price {
 		color: red;
 	}
-	#footer {
-		background-color: black;
-		bottom: 0;
-		color: white;
-		height: 50px;
-		left: 0;
-		position: absolute;
-		padding-top: 15px;
-		width: 100%;	
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px)
+{
+	body {
+		font-size: 13px;
 	}
 
+	.logo {
+		padding-top: 0px;
+	}
+
+	.logo img {
+		width: 100px;
+		height: 50px;
+		padding-top: 5px;
+	}
+
+	.menu {
+		float: right;
+	}
+
+	.slogan {
+		margin: 0 auto;
+		padding-top: 50px;
+	}
+
+	.image-category {
+		border: 1px black solid;
+		border-radius: 5px;
+		/*margin: 0px 5px 0px 5px;*/
+		padding: 15px 10px 15px 10px;
+
+	}
+	.image-category h3{
+		padding-left: 15px;
+	}
+
+	.image-category img{
+		width: 149px;
+		height: 149px;
+		-webkit-transition: width 0.7s;
+		-moz-transition: width 0.7s;
+		transition: width 0.7s;
+		-webkit-transition: height 0.7s ;
+		-moz-transition: height 0.7s;
+		transition: height 0.7s;
+	}
+
+	.image-category .images {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.image-category .image {
+		margin-top: 10px;
+	}
+	.image-category .images img:hover{
+		border: 1px solid yellow;
+		width: 160px;
+		height: 160px;
+	}
+}
+
+@media only screen and (min-width: 1024px)
+{
+	body {
+		font-size: 13px;
+	}
+
+	.logo {
+		padding-top: 0px;
+	}
+
+	.logo img {
+		width: 100px;
+		height: 50px;
+		padding-top: 5px;
+	}
+
+	.menu {
+		float: right;
+	}
+
+	.slogan {
+		margin: 0 auto;
+		padding-top: 50px;
+	}
+
+	.image-category {
+		border: 1px black solid;
+		border-radius: 5px;
+		/*margin: 0px 5px 0px 5px;*/
+		padding: 15px 10px 15px 10px;
+
+	}
+	.image-category h3{
+		padding-left: 15px;
+	}
+
+	.image-category img{
+		width: 149px;
+		height: 149px;
+		-webkit-transition: transform 1s ease;
+		-moz-transition: transform 1s ease;
+		transition: transform 1s ease;
+	}
+
+	.image-category .images {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.image-category .image {
+		margin-top: 10px;
+	}
+	.image-category .images img:hover{
+		border: 3px solid yellow;
+		border-radius: 5px;
+		width: 160px;
+		height: 160px;
+		-moz-transform:scale(1.1);
+		-webkit-transform:scale(1.1);
+		transform:scale(1.1);
+	}
 }
