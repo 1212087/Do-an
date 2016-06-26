@@ -16,6 +16,7 @@
     "font-awesome": "^4.6.3",
     "angular-route": "^1.5.7",
     "angular-sanitize": "^1.5.7",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2"
   }
 }
