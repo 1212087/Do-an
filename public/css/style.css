@@ -11,6 +11,37 @@ html, body {
 	box-sizing: border-box;
 }
 /*Phần định dạng css chung cho trang*/
+
+/* image 100x100 */
+.image-100 img {
+	width: 100px;
+	height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+}
+/*image 150x150 */
+.image-150 img {
+	width: 150px;
+	height: 150px;
+	max-width: 150px;
+	max-height: 150px;
+}
+/*image 200x200*/
+.image-200 img {
+	width: 200px;
+	height: 200px;
+	max-width: 200px;
+	max-height: 200px;
+}
+/*image 250x250*/
+.image- img {
+	width: 200px;
+	height: 200px;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+
 /*CSS định dạng kiểu ALIGN*/
 .center {
 	text-align: center;
@@ -129,7 +160,7 @@ html, body {
 		width: 49%;
 	}
 	
-	#main-content {
+	.main-content {
 	}
 
 	.post {
@@ -200,13 +231,17 @@ html, body {
 	.image-category {
 		display: none;
 	}
+
+	.review-us {
+		display: none;
+	}
 	/*CSS định dạng khung Giá*/
 	.price {
 		color: red;
 	}
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1023px)
+@media only screen and (min-width: 600px) and (max-width: 1024px)
 {
 	body {
 		font-size: 13px;
@@ -228,7 +263,6 @@ html, body {
 
 	.slogan {
 		margin: 0 auto;
-		padding-top: 50px;
 	}
 
 	.image-category {
@@ -239,12 +273,12 @@ html, body {
 
 	}
 	.image-category h3{
-		padding-left: 15px;
+		/*padding-left: 15px;*/
 	}
 
 	.image-category img{
-		width: 149px;
-		height: 149px;
+		width: 150px;
+		height: 150px;
 		-webkit-transition: width 0.7s;
 		-moz-transition: width 0.7s;
 		transition: width 0.7s;
@@ -262,13 +296,13 @@ html, body {
 		margin-top: 10px;
 	}
 	.image-category .images img:hover{
-		border: 1px solid yellow;
+		/*border: 1px solid yellow;*/
 		width: 160px;
 		height: 160px;
 	}
 }
 
-@media only screen and (min-width: 1024px)
+@media only screen and (min-width: 1025px)
 {
 	body {
 		font-size: 13px;
@@ -287,29 +321,24 @@ html, body {
 	.menu {
 		float: right;
 	}
-
+	.main-content{
+		/*padding-top: 50px;*/
+	}
 	.slogan {
 		margin: 0 auto;
-		padding-top: 50px;
 	}
 
 	.image-category {
-		border: 1px black solid;
+		/*border: 1px black solid;
 		border-radius: 5px;
-		/*margin: 0px 5px 0px 5px;*/
-		padding: 15px 10px 15px 10px;
+		margin: 0px 5px 0px 5px;
+		padding: 15px 10px 15px 10px;*/
+		width: 100%;
+		height: 250px;
 
 	}
 	.image-category h3{
 		padding-left: 15px;
-	}
-
-	.image-category img{
-		width: 149px;
-		height: 149px;
-		-webkit-transition: transform 1s ease;
-		-moz-transition: transform 1s ease;
-		transition: transform 1s ease;
 	}
 
 	.image-category .images {
@@ -320,13 +349,71 @@ html, body {
 	.image-category .image {
 		margin-top: 10px;
 	}
-	.image-category .images img:hover{
-		border: 3px solid yellow;
-		border-radius: 5px;
-		width: 160px;
-		height: 160px;
-		-moz-transform:scale(1.1);
-		-webkit-transform:scale(1.1);
-		transform:scale(1.1);
+
+	.image-category .images img{
+		width: 150px;
+		height: 150px;
+		-webkit-transition: transform 1s ease;
+		-moz-transition: transform 1s ease;
+		transition: transform 1s ease;
+		position: relative;
 	}
+
+	.image-category .image:hover img{
+		/*width: 160px;
+		height: 160px;*/
+		-moz-transform:scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
+	}
+
+	.image-category .image:hover span.roll {
+		visibility: visible;
+		-moz-transform:scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
+	}
+	.review-content {
+		margin-bottom: 5px;
+	}
+	.avatar {
+		position: relative;
+		
+	}
+	.avatar::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 20px solid;
+		border-left-color: #fff;
+		border-right-color: transparent;
+		border-top-color: transparent;
+		border-bottom-color: transparent;
+		top: 25%;
+		left: 80%;
+	}
+
+	span.roll{
+		height: 50px;
+		position: absolute;
+		width: 150px;
+		visibility: hidden;
+		z-index: 1000;
+		margin-top: 110px;
+		-webkit-transition: transform 1s ease;
+		-moz-transition: transform 1s ease;
+		transition: transform 1s ease;
+		color: black;
+		background: #F1F1F1;
+		opacity: 0.9;
+	}
+
+
+	/*.arrow {
+		width: 0;
+		height: 0;
+		border: 20px solid;
+		border-left-color: white;
+	}*/
 }
