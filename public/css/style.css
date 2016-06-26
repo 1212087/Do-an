@@ -41,26 +41,61 @@ html, body {
 	max-height: 200px;
 }
 
+.inline {
+	display: inline;
+}
 
 /*CSS định dạng kiểu ALIGN*/
 .center {
 	text-align: center;
 }
-	
+
+.center-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+.left {
+	text-align: left;
+}
 /*CSS định dạng màu nền TRẮNG*/
 .bg-white {
 	background-color: white !important;
 }
+
+.no-padding {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0px 0px 0px 0px !important;
+}
+
+/*CSS định dạng khung Giá*/
+.price {
+	color: red;
+}
+
+.clear {
+	clear: both;
+}
+/*Wrapper*/
+#wrapper {
+	min-height: 100%;
+	padding-bottom: 50px;
+	position: relative;
+}
 /*Footer*/
 #footer {
-		background-color: black;
-		bottom: 0;
-		color: white;
-		height: 50px;
-		left: 0;
-		position: absolute;
-		padding-top: 15px;
-		width: 100%;	
+	background-color: black;
+	bottom: 0;
+	color: white;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	padding-top: 15px;
+	width: 100%;	
 }
 
 
@@ -123,14 +158,9 @@ html, body {
 		opacity: 1;
 	}
 	
-	#wrapper {
-		min-height: 100%;
-		padding-bottom: 50px;
-		position: relative;
-	}
 
 	#content {
-		margin: 0px 5px 0px 5px;
+		margin: 0px -15px 0px -15px;
 	}
 
 	.search {
@@ -144,40 +174,52 @@ html, body {
 	 	width: 25%;
 	 }
 
-	.search-ip {
+	.search-input {
 		float: left;
 		margin-bottom: 2px;
 		width: 74%;
 	}
-	
+
+	.search-input-group {
+		margin: 0px -15px 0px -15px !important;
+	}
+
+	.search-option-group {
+		margin: 0px -15px 10px -15px !important;
+	}
+
+	.search-option {
+		width: 50%;
+		float: left;
+	}
+
 	.category {
 		float: left;
 		width: 50%;
 	}
-	
+
 	.location {
 		float: right;
 		width: 49%;
 	}
-	
+
 	.main-content {
 	}
 
 	.post {
-		background-color: white;
 		border: 0px;
-		border-radius: 5px;
+		border-radius: 10px;
 		clear: both;
 		display: flex;
 		line-height: 10px;
-		margin: -5px 0px 10px 0px;
+		margin: -5px 0px 15px 0px;
 		position: relative;
 	}
 	
-	.image {
+	.post .image {
 		align-items: stretch;
 		border-right: 1px solid #5bc0de;
-		padding: 0px !important;
+		padding: 0px 5px 0px 0px !important;
 		flex: 0.5;
 		max-height: 100%;
 	}
@@ -210,11 +252,23 @@ html, body {
 		margin-bottom: 5px;
 	}
 
-	.post-info .row {
+	/*.post-info .row {
 		border-bottom: 1px solid #bce8f1;
 		margin-top: 5px;
+	}*/
+
+	.post .info .time {
+		margin-top: 5px;
+		height: 25%;
 	}
 
+	.post .info .title {
+		height: 50%;
+	}
+
+	.post .info .price {
+		height: 25%;
+	}
 	.product-info {
 		text-align: justify;
 	}
@@ -222,22 +276,15 @@ html, body {
 	.contact {
 		margin: 0px;
 	}
+
 	.slogan {
 		color: black;
 		margin-bottom: 25px;
 		margin-top: 25px;
 	}
-	
-	.image-category {
-		display: none;
-	}
 
-	.review-us {
+	.mobile-hidden {
 		display: none;
-	}
-	/*CSS định dạng khung Giá*/
-	.price {
-		color: red;
 	}
 }
 
@@ -272,6 +319,7 @@ html, body {
 		padding: 15px 10px 15px 10px;
 
 	}
+
 	.image-category h3{
 		/*padding-left: 15px;*/
 	}
@@ -292,9 +340,11 @@ html, body {
 		flex-wrap: wrap;
 		justify-content: space-around;
 	}
+
 	.image-category .image {
 		margin-top: 10px;
 	}
+
 	.image-category .images img:hover{
 		/*border: 1px solid yellow;*/
 		width: 160px;
@@ -305,7 +355,7 @@ html, body {
 @media only screen and (min-width: 1025px)
 {
 	body {
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 	.logo {
@@ -321,22 +371,17 @@ html, body {
 	.menu {
 		float: right;
 	}
-	.main-content{
-		/*padding-top: 50px;*/
-	}
+
 	.slogan {
 		margin: 0 auto;
 	}
 
 	.image-category {
-		/*border: 1px black solid;
-		border-radius: 5px;
-		margin: 0px 5px 0px 5px;
-		padding: 15px 10px 15px 10px;*/
 		width: 100%;
 		height: 250px;
 
 	}
+
 	.image-category h3{
 		padding-left: 15px;
 	}
@@ -346,6 +391,7 @@ html, body {
 		flex-wrap: wrap;
 		justify-content: space-around;
 	}
+
 	.image-category .image {
 		margin-top: 10px;
 	}
@@ -373,13 +419,16 @@ html, body {
 		-webkit-transform:scale(1.2);
 		transform:scale(1.2);
 	}
+
 	.review-content {
 		margin-bottom: 5px;
 	}
+
 	.avatar {
 		position: relative;
 		
 	}
+
 	.avatar::after {
 		content: '';
 		position: absolute;
@@ -409,11 +458,113 @@ html, body {
 		opacity: 0.9;
 	}
 
+	.search button {
+		width: 10%;
+		margin-left: 10px;
+	}
 
-	/*.arrow {
-		width: 0;
-		height: 0;
-		border: 20px solid;
-		border-left-color: white;
-	}*/
+	.search-input-group {
+		margin-top: 10px !important;
+		padding-right: 0px !important;
+	}
+
+	.search-input {
+		float: left;
+		width: 88%;
+	}
+	.search-option-group {
+		margin-bottom: 10px !important;
+		padding-right: 0px !important;
+	}
+	.search-option {
+		width: 33%;
+		float: left;
+	}
+
+	.post {
+		width: 100%;
+		height: 170px;
+	}
+	.post .image img{
+		width: 100%;
+		height: auto;
+		max-height: 168px;
+	}
+	
+	.post .info {
+		position: relative;
+	}
+
+	.post .info .title {
+		position: absolute;
+		width: 70%;
+		height: 120px;
+		top: 0;
+		left: 0;
+		padding-top: 5px;
+	}
+	
+	.post .info .author {
+		width: 35%;
+		position: absolute;
+		bottom: -168px;
+		left: 0px;
+		height: 50px;
+	}
+
+	.post .info .localtion {
+		width: 35%;
+		position: absolute;
+		bottom: -168px;
+		left: 300px;
+		height: 50px;
+	}
+
+	.post .info .price {
+		position: absolute;
+		width: 30%;
+		height: 70px;
+		height: px;
+		float: left;
+		top:0;
+		right: 0;
+		text-align: center;
+		padding-top: 15px;
+		color: red;
+	}
+
+	.post .info .time {
+		position: absolute;
+		width: 30%;
+		height: 50px;
+		bottom: -118px;
+		right: 0;
+		text-align: center;
+	}
+	
+	.post .info .category {
+		position: absolute;
+		width: 30%;
+		height: 50px;
+		bottom: -168px;
+		right: 0;
+		text-align: center;
+	}
+
+	.post-info table img
+	{
+		width: 400px;
+		height: 400px;
+	}
+
+	.login-form {
+		width: 50%;
+		margin: auto;
+	}
+
+	.login {
+		display: flex;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
 }
