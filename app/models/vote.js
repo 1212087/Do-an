@@ -3,38 +3,26 @@ var ObjectId = mongoose.Schema.Types.ObjectId;
 
 // tạo cấu trúc db
 var schema = mongoose.Schema({
-    userReported: {
+    questionId: {
         type: ObjectId,
-        ref: 'User'
+        ref: 'Question'
     },
     userId: {
         type: ObjectId,
         ref: 'User'
-    },
-    questionId: {
-        type: ObjectId,
-        ref: 'Question'
     },
     answerId: {
         type: ObjectId,
         ref: 'Answer'
     },
     type: {
-        type: 'String',
-        required: true
-    },
-    content: {
-        type: 'String',
-        default: null
-    },
-    status: {
         type: 'Boolean',
-        default: false
+        required: true
     },
     creationDate: {
         type: 'Date',
         default: Date.now
     }
 });
-// tạo model cho Report và export vào app
-module.exports = mongoose.model('Report', schema);
+// tạo model cho Favorite và export vào app
+module.exports = mongoose.model('Vote', schema);

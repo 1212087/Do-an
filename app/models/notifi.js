@@ -3,29 +3,21 @@ var ObjectId = mongoose.Schema.Types.ObjectId;
 
 // tạo cấu trúc db
 var schema = mongoose.Schema({
-    userReported: {
+    userRecive: {
         type: ObjectId,
         ref: 'User'
     },
-    userId: {
+    userSend: {
         type: ObjectId,
         ref: 'User'
+    },
+    content: {
+        type: 'String',
+        require: true
     },
     questionId: {
         type: ObjectId,
         ref: 'Question'
-    },
-    answerId: {
-        type: ObjectId,
-        ref: 'Answer'
-    },
-    type: {
-        type: 'String',
-        required: true
-    },
-    content: {
-        type: 'String',
-        default: null
     },
     status: {
         type: 'Boolean',
@@ -36,5 +28,5 @@ var schema = mongoose.Schema({
         default: Date.now
     }
 });
-// tạo model cho Report và export vào app
-module.exports = mongoose.model('Report', schema);
+// tạo model cho Notification và export vào app
+module.exports = mongoose.model('Notifi', schema);

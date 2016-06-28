@@ -3,9 +3,9 @@ var ObjectId = mongoose.Schema.Types.ObjectId;
 
 // tạo cấu trúc db
 var schema = mongoose.Schema({
-    postId: {
+    questionId: {
         type: ObjectId,
-        ref: 'Post'
+        ref: 'Question'
     },
     tagId: {
         type: ObjectId,
@@ -14,5 +14,5 @@ var schema = mongoose.Schema({
 
 });
 
-// tạo model cho PostTag và export vào app
-module.exports = mongoose.model('PostTag', schema);
+// tạo model cho QuestionTag và export vào app
+module.exports = mongoose.model('QuestionTag', schema);
