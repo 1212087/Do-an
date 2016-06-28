@@ -14,20 +14,20 @@ var schema = mongoose.Schema({
         type: 'Number',
         default: 0
     },
-    dateCreated: {
+    creationDate: {
         type: 'Date',
         default: Date.now
     },
-    dateUpdated: {
+    lastEditDate: {
         type: 'Date',
         default: Date.now
     }
 
 });
-schema.statics.getPostByTag = function (id, callback) {
-    return this.model('PostTag').find({
-        tagId: id
-    }, callback);
-};
+schema.statics.getQuestionByTag = function(id, callback) {
+return this.model('QuestionTag').find({
+    tagId: id
+}, callback);
+}
 // tạo model cho Tag và export vào app
 module.exports = mongoose.model('Tag', schema);

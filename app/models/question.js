@@ -20,7 +20,7 @@ var schema = mongoose.Schema({
         type: 'Number',
         default: 0
     },
-    price: {
+    score: {
         type: 'Number',
         default: 0
     },
@@ -28,31 +28,19 @@ var schema = mongoose.Schema({
         type: 'String',
         default: null
     },
-    isSole: {
+    isResolved: {
         type: 'Boolean',
         default: false
     },
-    status: {
-        type: 'Boolean',
-        default: false
+    price: {
+        type: 'Number',
+        default: 0
     },
-    dateCreated: {
-        type: 'Date',
-        required: true
-    },
-    dateUpdated: {
-        type: 'Date',
-        default: Date.now
-    },
-    image: {
-        type: 'String',
-        required: false
-    }, //Chỉ tồn tại nếu bài đăng được đóng.
-    catelogyID: {
+    location: {
         type: 'String',
         default: null
     },
-    isNeww: {
+    district: {
         type: 'String',
         default: null
     },
@@ -60,21 +48,39 @@ var schema = mongoose.Schema({
         type: 'String',
         default: null
     },
-    district: {
-        type: 'String',
-        default: null
-    }
+    status: {
+        type: 'Boolean',
+        default: false
+    },
+    creationDate: {
+        type: 'Date',
+        required: true
+    },
+    lastEditDate: {
+        type: 'Date',
+        default: Date.now
+    },
+    closedDate: {
+        type: 'Date',
+        required: false
+    } //Chỉ tồn tại nếu bài đăng được đóng.
+
 });
 
-schema.statics.findTags = function (id, callback) {
-    return this.model('PostTag').find({
-        PostId: id
-    }, callback);
-};
+schema.statics.findAnswers = function(id, callback) {
+return this.model('Answer').find({
+    questionId: id
+}, callback);
+}
+schema.statics.findTags = function(id, callback) {
+return this.model('QuestionTag').find({
+    questionId: id
+}, callback);
+}
 
-schema.pre('save', function (next) {
+schema.pre('save', function(next) {
     next();
 });
 
 // tạo model cho Question và export vào app
-module.exports = mongoose.model('posts', schema);
+module.exports = mongoose.model('Question', schema);
