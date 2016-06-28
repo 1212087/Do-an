@@ -3,7 +3,7 @@ var bcrypt = require('bcrypt-nodejs');
 
 // tạo cấu trúc db
 var schema = mongoose.Schema({
-    displayName: {
+    username: {
         type: 'String',
         required: true
     },
@@ -11,7 +11,15 @@ var schema = mongoose.Schema({
         type: 'String',
         required: true
     },
+    fullname: {
+        type: 'String',
+        required: true
+    },
     password: {
+        type: 'String',
+        default: null
+    },
+    phone: {
         type: 'String',
         default: null
     },
@@ -19,11 +27,7 @@ var schema = mongoose.Schema({
         type: 'String',
         default: null
     },
-    location: {
-        type: 'String',
-        default: null
-    },
-    website: {
+    address: {
         type: 'String',
         default: null
     },
@@ -31,13 +35,9 @@ var schema = mongoose.Schema({
         type: 'String',
         default: null
     },
-    reputation: {
-        type: 'Number',
-        default: 0
-    },
     status: {
         type: 'Number',
-        default: 1
+        default: 0
     },
     role: {
         type: 'String',
@@ -46,14 +46,6 @@ var schema = mongoose.Schema({
     activeToken: {
         type: 'String',
         default: null
-    },
-    resetPasswordToken: {
-        type: 'String',
-        default: null
-    },
-    resetPasswordExpires: {
-        type: 'String',
-        default: Date.now
     },
     creationDate: {
         type: 'Date',
@@ -66,16 +58,14 @@ var schema = mongoose.Schema({
     lastAccessDate: {
         type: 'Date',
         default: Date.now
-    },
-    address: {
-        type: 'String',
-        default: "null"
-    },
-    phone: {
-        type: 'String',
-        default: "null"
     }
 });
+
+schema.statics.findPost = function (id, callback) {
+    return this.model('Post').find({
+        userId: id
+    }, callback);
+};
 
 // tạo ra mã hash
 schema.methods.generateHash = function(password) {

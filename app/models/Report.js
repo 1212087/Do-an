@@ -1,29 +1,36 @@
 var mongoose = require('mongoose');
 var ObjectId = mongoose.Schema.Types.ObjectId;
 
-
 // tạo cấu trúc db
 var schema = mongoose.Schema({
-    userSend: {
+    userReported: {
         type: ObjectId,
         ref: 'User'
     },
-    userRecive: {
+    userId: {
         type: ObjectId,
         ref: 'User'
     },
-    msg: {
+    questionId: {
+        type: ObjectId,
+        ref: 'Question'
+    },
+    type: {
         type: 'String',
-        require: true
+        required: true
+    },
+    content: {
+        type: 'String',
+        default: null
     },
     status: {
         type: 'Boolean',
         default: false
     },
-    creationDate: {
+    dateCreated: {
         type: 'Date',
         default: Date.now
     }
 });
-// tạo model cho Chat và export vào app
-module.exports = mongoose.model('Chat', schema);
+// tạo model cho Report và export vào app
+module.exports = mongoose.model('Report', schema);

@@ -1,33 +1,19 @@
-var question = require('./question');
-var user = require('./user');
-var answer = require('./answer');
-var login = require('./login');
-var tag = require('./tag');
-var chat = require('./chat');
-var notifi = require('./notifi');
-var report = require('./report');
+var tag = require('./Tag');
+var post = require('./Post');
+var user = require('./User');
+var report = require('./Report');
 
-var mongoose = require('mongoose');
+module.exports = function (app, passport) {
 
-module.exports = function(app, passport) {
-
-    // Quản lý câu hỏi
-    question(app);
-    //Quản lý thành viên
-    user(app);
-    //Quản lý các câu trả lời
-    answer(app);
-    //Quản lý việc đăng ký, đăng nhập, đăng xuất của thành viên.
-    login(app, passport);
-    //Quản lý tag
+    // quản lý các tag
     tag(app);
-    chat(app);
-    notifi(app);
-    report(app);
-
+    //quản lý các post
+    post(app);
+    //quản l1y các user
+    user(app);
 
     //Tất cả request phải đi qua trang index.html để xử lý.
-    app.get('*', function(req, res) {
+    app.get('*', function (req, res) {
         res.sendfile('public/index.html');
     });
 };
