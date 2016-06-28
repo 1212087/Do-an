@@ -1,0 +1,66 @@
+<div class="background-main-content">
+    <div class="intro-content-wrapper">
+        <div class="form-signup-wrapper">
+            <div id="register" class="animate ">
+                <h3 class="title">Đăng tin rao vặt</h3>
+                <form id="sign_up" class="form-horizontal" name="form" ng-submit="createQuestion()" novalidate>
+                    <div class="form-group">
+                        <div class="row" style="margin-left: 10px;">
+                            <div class="form-group col-md-8">
+                                Tiêu đề:
+                                <input type="text" id="title" class="form-control" ng-model="formData.title" required="required"  name="title" ng-maxlength="120">
+                            </div>
+                            
+                        </div>
+                        <div class="row" style="margin-left: 10px;">
+                        <div class="form-group col-md-4">
+                            Giá bán theo VNĐ:<input type="text" id="title" class="form-control" ng-model="formData.price" required="required"  name="price" ng-maxlength="120">
+                            </div>
+                        </div>
+                        
+                        <div class="row" style="margin-left: 10px;">
+                            
+                            <div class="form-group col-md-6">
+                                Địa chỉ:
+                                <input type="text" id="title" class="form-control" ng-model="formData.location" required="required"  name="location" ng-maxlength="120">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-left: 10px;">
+                            <div class="form-group col-md-3">
+                                Quận / Huyện:
+                                <select required class="form-control" ng-model="formData.selectedDistrict" ng-options="x for x in listDistrict"></select>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-left: 10px;">
+                            <div class="form-group col-md-3">
+                                Thành phố:
+                                <select class="form-control" ng-model="formData.selectedCity" ng-options="x for x in listCity"></select>
+                            </div>
+                        </div>
+                        
+                        <div class="row" style="margin-left: 10px;">
+                            <div class="form-group col-md-3">
+                                Danh mục:
+                                <div class="panel panel-default" ng-controller="PopularTagController">
+                                    <select class="form-control" ng-model="formData.selectedTag" ng-options="x.tagName for x in popularTag"></select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <center><h4 class="preview-title">Nội dung <span class="pull-right" data-toggle="modal" data-target="#myModal" style="cursor: pointer; color: #1d9977"></span></h4></center>
+                                <textarea class="form-control" rows="12" ng-model="formData.content" required="required" id="mirror" style="resize:none"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding:0 10px">
+                        <center><md-button class="md-raised md-primary" type="submit"><i class="fa fa-spinner fa-spin" ng-show="Proccess" ></i> Đăng tin</md-button></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end form -->
+    </div>
+</div>
