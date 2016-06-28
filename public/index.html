@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>iMarket - chợ điện tử</title>
-
+		<base href="/" />
+        <meta name="fragment" content="!">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.css">
 		<!-- Style -->
@@ -29,7 +30,7 @@
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<div class="navbar-brand logo">
-								<a href="#/" title=""><img src="img/logo/1.jpg" alt="" ></a>
+								<a href="/" title=""><img src="img/logo/1.jpg" alt="" ></a>
 							</div>
 							<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 								<span class="sr-only">Toggle navigation</span>
@@ -42,17 +43,17 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse navbar-ex1-collapse menu">
 							<ul class="nav navbar-nav menu">
-								<li><a class="newpost-btn" href="#/new" title="Đăng tin bài mới" data-target=".navbar-collapse" data-toggle="collapse"><b>ĐĂNG BÁN NGAY!</b></a></li>
-								<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/login"><b>ĐĂNG NHẬP</b></a></li>
-								<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#"><b>TRỢ GIÚP</b></a></li>
-								<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/about"><b>VỀ CHÚNG TÔI</b></a></li>
+								<li><a class="newpost-btn" href="/new" title="Đăng tin bài mới" data-target=".navbar-collapse" data-toggle="collapse"><b>ĐĂNG BÁN NGAY!</b></a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse" href="/login"><b>ĐĂNG NHẬP</b></a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse" href=""><b>TRỢ GIÚP</b></a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse" href="/about"><b>VỀ CHÚNG TÔI</b></a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div>
 				</nav>
 			</div>
 			<!-- Content, add row class first for 100% width -->
-			<div ng-view>
+			<div ui-view>
 				
 			</div>
 			<!-- Footer -->
@@ -70,9 +71,18 @@
 		<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 		<!-- Angular JS -->
  		<script src="libs/angular/angular.js"></script>
- 		<script src="libs/angular-route/angular-route.js"></script>
+ 		<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="libs/angular-route/angular-route.min.js"></script>
+		<script src="js/controllers/AboutCtrl.js"></script>
+		<script src="js/controllers/ForgetCtrl.js"></script>
+		<script src="js/controllers/HomeCtrl.js"></script>
+		<script src="js/controllers/LoginCtrl.js"></script>
+		<script src="js/controllers/NewCtrl.js"></script>
+		<script src="js/controllers/PostCtrl.js"></script>
+		<script src="js/controllers/RegisterCtrl.js"></script>
+		<script src="js/controllers/WelcomeCtrl.js"></script>
+		<script src="js/appRoutes.js"></script>
  		<script src="js/app.js"></script>
- 		<script src="js/controllers/account/account.js"></script>
 		<script src="libs/wow/dist/wow.js"></script>
 		<script>
 			new WOW().init();
