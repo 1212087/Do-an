@@ -12,6 +12,9 @@ html, body {
 }
 /*Phần định dạng css chung cho trang*/
 
+textarea {
+	resize: none;
+}
 /* image 100x100 */
 .image-100 img {
 	width: 100px;
@@ -152,7 +155,6 @@ html, body {
 	}
 	
 	.menu {
-		
 		background-color: #F1F1F1 !important;
 		color: black !important;
 		opacity: 1;
@@ -285,6 +287,10 @@ html, body {
 
 	.mobile-hidden {
 		display: none;
+	}
+
+	#address #province {
+		margin-bottom: 15px;
 	}
 }
 
@@ -566,5 +572,11 @@ html, body {
 		display: flex;
 		margin-top: 50px;
 		margin-bottom: 20px;
+	}
+
+	.newpost-btn {
+		color: red !important;
+		font-size: 16px;
+		background-color:#5bc0de;
 	}
 }
