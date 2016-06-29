@@ -41,9 +41,9 @@
 | 1212302    |0     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
 | 1212447    |3     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
 
-5. **Wireframe **
+5. **Wireframe**
 
-6. **Data Schema **
+6. **Data Schema**
 	* Question
 	![Question](docs/images/questions.png)
 	* Answer
