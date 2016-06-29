@@ -41,9 +41,9 @@
 | 1212302    |0     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
 | 1212447    |3     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
 
-5. **Wireframe **
+5. **Wireframe**
 
-6. **Data Schema **
+6. **Data Schema**
 	* Question
 	![Question](docs/images/questions.png)
 	* Answer
@@ -62,4 +62,4 @@
 	![QuestionTag](docs/images/questiontag.png)
 	* System
 	![System](docs/images/system.png)	
-7. **Demo**
+7. **Demo: http://150.107.152.48:9000/**

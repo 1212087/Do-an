@@ -35,8 +35,8 @@ var schema = mongoose.Schema({
 });
 
 schema.pre('save', function(next) {
-    console.log('A new answer "%s" was inserted', this._id);
+    console.log('A new comment "%s" was inserted', this._id);
     next();
 });
 
-module.exports = mongoose.model('Answer', schema);
+module.exports = mongoose.model('comment', schema);
