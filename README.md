@@ -65,6 +65,10 @@
 	
 6. **Demo: http://150.107.152.48:9000/**
 
+7. **Tài khoản test admin**
+	* email: twilight1407@yahoo.com.vn
+	* password: 123456789
+
 7. **Các chuẩn đầu ra đạt được**
 
 | Thành viên | G1.2 | G3.1 | G5.1 | G5.2 | G5.3 và G5.5 | G5.4 | G6.1 và G6.2 | G7.1 | G8.1 | G8.3 |
