@@ -32,18 +32,9 @@
 	* [x] **Admin** xóa user
 	* [x] **Admin** chỉnh sửa vai trò của user
 
-4. **Các chuẩn đầu ra đạt được**
+4. **Wireframe**
 
-| Thành viên | G1.2 | G3.1 | G5.1 | G5.2 | G5.3 và G5.5 | G5.4 | G6.1 và G6.2 | G7.1 | G8.1 | G8.3 |
-| ---------- |:----:|:----:|:----:|:----:|:------------:|:----:|:------------:|:----:|:----:|-----:|
-| 1112142    |9     |9     |10    |10    |7             |7     |7             |5     |5     |9     |
-| 1212087    |7     |7     |10    |10    |7             |7     |5             |5     |5     |7     |
-| 1212302    |0     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
-| 1212447    |3     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
-
-5. **Wireframe**
-
-6. **Data Schema**
+5. **Data Schema**
 	* Question
 	![Question](docs/images/questions.png)
 	* Answer
@@ -56,10 +47,22 @@
 	![Tag](docs/images/tag.png)
 	* User
 	![User](docs/images/user.png)
-	* Badges
-	![Badges](docs/images/badges.png)
 	* Question Tag
 	![QuestionTag](docs/images/questiontag.png)
-	* System
-	![System](docs/images/system.png)	
-7. **Demo: http://150.107.152.48:9000/**
+	* Favorite
+	![Favorite](docs/images/favorite.png)
+	* Vote
+	![Vote](docs/images/vote.png)
+	* Report
+	![Report](docs/images/report.png)
+	
+6. **Demo: http://150.107.152.48:9000/**
+
+7. **Các chuẩn đầu ra đạt được**
+
+| Thành viên | G1.2 | G3.1 | G5.1 | G5.2 | G5.3 và G5.5 | G5.4 | G6.1 và G6.2 | G7.1 | G8.1 | G8.3 |
+| ---------- |:----:|:----:|:----:|:----:|:------------:|:----:|:------------:|:----:|:----:|-----:|
+| 1112142    |9     |9     |10    |10    |7             |7     |7             |5     |5     |9     |
+| 1212087    |7     |7     |10    |10    |7             |7     |5             |5     |5     |7     |
+| 1212302    |0     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
+| 1212447    |3     |0     |0     |0     |0             |0     |0             |0     |0     |0     |
