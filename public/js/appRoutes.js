@@ -35,7 +35,7 @@ angular.module('appRoutes', [])
         })
         .state('system-question', {
             url: '/system/questions',
-            templateUrl: 'views/private/question/manage.html',
+            templateUrl: 'views/admin/question/manage.html',
             controller: 'ListQuestionController',
             title: 'Quản lý rao vặt',
             access: {
@@ -44,7 +44,7 @@ angular.module('appRoutes', [])
         })
         .state('system-question-edit', {
             url: '/system/questions/edit/:id',
-            templateUrl: 'views/private/question/edit.html',
+            templateUrl: 'views/admin/question/edit.html',
             controller: 'QuestionController',
             title: 'Quản lý rao vặt',
             access: {
@@ -55,7 +55,7 @@ angular.module('appRoutes', [])
         /*===============ANSWERS================*/
         .state('system-answer', {
             url: '/system/answers',
-            templateUrl: 'views/private/answer/manage.html',
+            templateUrl: 'views/admin/answer/manage.html',
             controller: 'AnswerController',
             title: 'Quản lý bình luận',
             access: {
@@ -64,7 +64,7 @@ angular.module('appRoutes', [])
         })
         .state('system-answer-detail', {
             url: '/system/answers/detail/:id',
-            templateUrl: 'views/private/answer/detail.html',
+            templateUrl: 'views/admin/answer/detail.html',
             controller: 'AnswerController',
             title: 'Quản lý bình luận',
             access: {
@@ -156,7 +156,7 @@ angular.module('appRoutes', [])
         })
         .state('system-user', {
             url: '/system/users',
-            templateUrl: 'views/private/user/manage.html',
+            templateUrl: 'views/admin/user/manage.html',
             controller: 'ListUserController',
             title: 'Quản lý thành viên',
             access: {
@@ -165,7 +165,7 @@ angular.module('appRoutes', [])
         })
         .state('system-user-permission', {
             url: '/system/users/permission/:id',
-            templateUrl: 'views/private/user/permission.html',
+            templateUrl: 'views/admin/user/permission.html',
             controller: 'EditProfile',
             title: 'Quản lý thành viên',
             access: {
@@ -176,7 +176,7 @@ angular.module('appRoutes', [])
         /*================SYSTEM================*/
         .state('system', {
             url: '/system',
-            templateUrl: 'views/private/system.html',
+            templateUrl: 'views/admin/system.html',
             controller: 'MainController',
             title: 'Quản lý Hệ thống',
             access: {
@@ -206,7 +206,7 @@ angular.module('appRoutes', [])
         })
         .state('system-tag', {
             url: '/system/tags',
-            templateUrl: 'views/private/tag/manage.html',
+            templateUrl: 'views/admin/tag/manage.html',
             controller: 'ListTagController',
             title: 'Quản lý danh mục',
             access: {
@@ -215,7 +215,7 @@ angular.module('appRoutes', [])
         })
         .state('system-tag-edit', {
             url: '/system/tags/edit/:id',
-            templateUrl: 'views/private/tag/edit.html',
+            templateUrl: 'views/admin/tag/edit.html',
             controller: 'TagDetail',
             title: 'Quản lý danh mục',
             access: {
@@ -226,7 +226,7 @@ angular.module('appRoutes', [])
         /*================SYSTEM SETTING==============*/
         .state('system-report', {
             url: '/system/report',
-            templateUrl: 'views/private/report/manage.html',
+            templateUrl: 'views/admin/report/manage.html',
             controller: 'ReportController',
             title: 'Quản lý vi phạm',
             access: {
