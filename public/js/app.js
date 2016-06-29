@@ -89,9 +89,9 @@ app.run([
             ngProgress.height('4px');
 
             if (toState.title) {
-                $rootScope.pageTitle = toState.title + ' | Mạng xã hội hỏi đáp Việt Nam';
+                $rootScope.pageTitle = toState.title + ' | Trang rao vặt TP.HCM';
             } else {
-                $rootScope.pageTitle = 'Mạng xã hội hỏi đáp Việt Nam';
+                $rootScope.pageTitle = 'Trang rao vặt TP.HCM';
             }
             /*Xác thực quyền thành viên khi truy cập vào trang cần đăng nhập*/
             if (toState.access.requiredLogin && !AuthenticationService.isLogged) {

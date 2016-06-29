@@ -27,7 +27,7 @@ module.exports = function(app, passport) {
                 if (req.user._id != q.userId._id) {
                     var domain = req.headers.host || 'imarket.com';
                     var mailOptions = {
-                        from: 'Mạng xã hội hỏi đáp <' + configMail.gmail.user + '>', // Địa chỉ người gửi
+                        from: 'Trang rao vặt <' + configMail.gmail.user + '>', // Địa chỉ người gửi
                         to: q.userId.email, //Danh sách người nhận, ngăn cách nhau bằng dấu phẩy
                         subject: 'Câu hỏi của bạn đã được trả lời', // Tiêu đề thư
                         //text: 'Hello world', // Nội dung thư dạng thường
@@ -62,7 +62,7 @@ module.exports = function(app, passport) {
                     if (item.userId._id != req.user._id) {
                         var domain = req.headers.host || 'imarket.com';
                         var mailOptions = {
-                            from: 'Mạng xã hội hỏi đáp <' + configMail.gmail.user + '>', // Địa chỉ người gửi
+                            from: 'Trang rao vặt <' + configMail.gmail.user + '>', // Địa chỉ người gửi
                             to: item.userId.email, //Danh sách người nhận, ngăn cách nhau bằng dấu phẩy
                             subject: 'Trả lời mới trong câu hỏi bạn quan tâm', // Tiêu đề thư
                             //text: 'Hello world', // Nội dung thư dạng thường

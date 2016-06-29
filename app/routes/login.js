@@ -20,7 +20,7 @@ module.exports = function(app, passport) {
         // Thiết lập nội dung thư
 //        var domain = req.headers.host || 'imarket.com';
 //        var mailOptions = {
-//            from: 'Mạng xã hội hỏi đáp <' + configMail.gmail.user + '>', // Địa chỉ người gửi
+//            from: 'Trang rao vặt <' + configMail.gmail.user + '>', // Địa chỉ người gửi
 //            to: req.user.email, //Danh sách người nhận, ngăn cách nhau bằng dấu phẩy
 //            subject: 'Email kích hoạt tài khoản', // Tiêu đề thư
 //            html: '<strong>Chúc mừng ' + req.user.displayName + ' đã đăng ký thành công tài khoản tại imarket. </strong><br><p>Thông tin đăng ký</p><ul><li>Email: ' + req.user.email + '</li><li>Tên hiển thị: ' + req.user.displayName + '</li><li>Mật khẩu: ******</li></ul><br /><p>Vui lòng kích hoạt tài khoản bằng cách nhấn &nbsp;<a href="http://' + domain + '/users/active/' + req.user._id + '/' + req.user.activeToken + '"target="_blank">vào đây</a>' // Nội dung dạng html

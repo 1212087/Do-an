@@ -57,7 +57,7 @@ angular.module('appRoutes', [])
             url: '/system/answers',
             templateUrl: 'views/private/answer/manage.html',
             controller: 'AnswerController',
-            title: 'Quản lý câu trả lời',
+            title: 'Quản lý bình luận',
             access: {
                 requiredLogin: true
             }
@@ -66,7 +66,7 @@ angular.module('appRoutes', [])
             url: '/system/answers/detail/:id',
             templateUrl: 'views/private/answer/detail.html',
             controller: 'AnswerController',
-            title: 'Quản lý câu trả lời',
+            title: 'Quản lý bình luận',
             access: {
                 requiredLogin: true
             }
@@ -190,7 +190,7 @@ angular.module('appRoutes', [])
             url: '/tags.html',
             templateUrl: 'views/public/tag/index.html',
             controller: 'ListTagController',
-            title: 'Tags',
+            title: 'Danh mục',
             access: {
                 requiredLogin: false
             }
@@ -199,7 +199,7 @@ angular.module('appRoutes', [])
             url: '/cau-hoi-theo-tag/:id/:slug',
             templateUrl: 'views/public/tag/question.html',
             controller: 'getQuestionByTagController',
-            title: 'Tagged Question',
+            title: 'Tin rao vặt theo danh mục',
             access: {
                 requiredLogin: false
             }

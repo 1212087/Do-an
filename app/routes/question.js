@@ -600,7 +600,7 @@ module.exports = function (app, passport) {
                     return res.send(err);
                 }
                 var mailOptions = {
-                    from: 'Mạng xã hội hỏi đáp <' + configMail.gmail.user + '>', // Địa chỉ người gửi
+                    from: 'Trang rao vặt <' + configMail.gmail.user + '>', // Địa chỉ người gửi
                     to: question.userId.email, //Danh sách người nhận, ngăn cách nhau bằng dấu phẩy
                     subject: 'Bài viết đã được xét duyệt', // Tiêu đề thư
                     html: '<p><strong>Chào ' + question.userId.displayName + '.</strong></p> <p>Câu hỏi "<strong>' + question.title + '</strong>" của bạn đã được đăng. Hãy bắt đầu thảo luận về chủ đề bạn thắc mắc nhé.</p>' // Nội dung dạng html

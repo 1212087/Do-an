@@ -389,7 +389,7 @@ module.exports = function(app, passport) {
             var domain = req.headers.host || "imarket.com";
             var mailOptions = {
                 to: user.email,
-                from: 'Mạng xã hội hỏi đáp <' + configMail.gmail.user + '>',
+                from: 'Trang rao vặt <' + configMail.gmail.user + '>',
                 subject: 'Email khôi phục mật khẩu',
                 text: 'Bạn nhận được email này là vì bạn (hoặc ai đó) đã yêu cầu thay đổi mật khẩu tài khoản của bạn.\n\n' +
                     'Hãy click vào đường link dưới hoặc chép và dán vào khung nhập địa chỉ của trình duyệt để hoàn tất xử lý:\n\n' +
@@ -438,7 +438,7 @@ module.exports = function(app, passport) {
                 user.save(function(err) {
                     var mailOptions = {
                         to: user.email,
-                        from: 'Mạng xã hội hỏi đáp <' + configMail.gmail.user + '>',
+                        from: 'Mạng xã hội <' + configMail.gmail.user + '>',
                         subject: 'Mật khẩu đã được thay đổi',
                         text: 'Đây là email xác nhận mật khẩu tài khoản ' + user.displayName + ' đã được thay đổi.'
                     };

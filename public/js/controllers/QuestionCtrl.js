@@ -1,7 +1,7 @@
 angular.module('QuestionCtrl', [])
         .controller('QuestionController', ['$timeout', '$scope', '$cookieStore', '$rootScope', '$location', '$state', '$http', '$q', '$stateParams', 'flash', '$modal', 'appAlert', 'Answer', 'Question', 'socket', 'Notifi', function ($timeout, $scope, $cookieStore, $rootScope, $location, $state, $http, $q, $stateParams, flash, $modal, appAlert, Answer, Question, socket, Notifi) {
                 $scope.FullPath = $location.absUrl();
-                $scope.listDistrict = ["Quận 1", "Quận 2", "Quận 3", "Quận 4", "Quận 5", "Quận 6", "Quận 7"];
+                $scope.listDistrict = ["Quận 1", "Quận 2", "Quận 3", "Quận 4", "Quận 5", "Quận 6", "Quận 7", "Quận 8", "Quận 9", "Quận 10", "Quận 11", "Quận 12", "Quận Gò Vấp", "Quận Bình Thạnh", "Quận Tân Bình", "Quận Tân Phú", "Quận Phú Nhuận", "Quận Bình Tân", "Quận Thủ Đức", "Huyện Củ Chi", "Huyện Hóc Môn", "Huyện Bình Chánh"];
                 $scope.listCity = ["TP. HCM"];
                 $scope.formData = {};
                 $scope.formData.selectedDistrict = $scope.listDistrict[0];
