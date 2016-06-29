@@ -46,4 +46,20 @@
 6. **Data Schema **
 	* Question
 	![Question](docs/images/questions.png)
+	* Answer
+	![Answer](docs/images/answer.png)
+	* Chat
+	![Chat](docs/images/chat.png)
+	* Nontification
+	![Nontification](docs/images/nontification.png)
+	* Tag
+	![Tag](docs/images/tag.png)
+	* User
+	![User](docs/images/user.png)
+	* Badges
+	![Badges](docs/images/badges.png)
+	* Question Tag
+	![QuestionTag](docs/images/questionstag.png)
+	* System
+	![System](docs/images/system.png)	
 7. **Demo**
