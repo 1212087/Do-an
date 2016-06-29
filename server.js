@@ -218,7 +218,7 @@ app.set('view engine', 'html');
 
 //Kết nối cơ sở dữ liệu
 var db = require('./config/database');
-mongoose.connect(db.url);
+mongoose.createConnection(db.url);
 
 require('./config/passport')(passport); // pass passport for configuration
 
