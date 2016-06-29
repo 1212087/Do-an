@@ -47,7 +47,7 @@
 	* Question
 	![Question](docs/images/questions.png)
 	* Answer
-	![Answer](docs/images/answer.png)
+	![Answer](docs/images/Answer.png)
 	* Chat
 	![Chat](docs/images/chat.png)
 	* Nontification
@@ -59,7 +59,7 @@
 	* Badges
 	![Badges](docs/images/badges.png)
 	* Question Tag
-	![QuestionTag](docs/images/questionstag.png)
+	![QuestionTag](docs/images/questiontag.png)
 	* System
 	![System](docs/images/system.png)	
 7. **Demo: http://150.107.152.48:9000/**
