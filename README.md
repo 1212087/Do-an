@@ -33,7 +33,14 @@
 	* [x] **Admin** chỉnh sửa vai trò của user
 
 4. **Wireframe**
-
+	![1](docs/images/wireframe/1.png)
+	![2](docs/images/wireframe/2.png)
+	![3](docs/images/wireframe/3.png)
+	![4](docs/images/wireframe/4.png)
+	![5](docs/images/wireframe/5.png)
+	![6](docs/images/wireframe/6.png)
+	![7](docs/images/wireframe/7.png)
+	![8](docs/images/wireframe/8.png)
 5. **Data Schema**
 	* Question
 	![Question](docs/images/questions.png)
